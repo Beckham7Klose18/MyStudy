@@ -12,7 +12,6 @@
                 <el-menu router background-color="#f3f3f3" text-color="#666" active-text-color="#fff"
                      :collapse-transition="false" :default-active="$route.matched[1] && $route.matched[1].path"
                      :collapse="isc" @select="loadingOpen" @open="menuOpen" :default-openeds="['1']">
-                  <!--          :default-openeds="['11']"    -->
                     <template v-for="(item,index) in routes">
                         <el-submenu :index="index.toString()">
                             <template slot="title">
